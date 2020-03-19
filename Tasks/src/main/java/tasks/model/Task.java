@@ -55,6 +55,7 @@ public class Task implements Serializable, Cloneable {
     public void setTitle(String title) {
         this.title = title;
     }
+
     public boolean isActive(){
         return this.active;
     }
@@ -81,6 +82,7 @@ public class Task implements Serializable, Cloneable {
     public Date getEndTime() {
         return end;
     }
+
     public int getRepeatInterval(){
         return interval > 0 ? interval : 0;
     }
@@ -97,17 +99,20 @@ public class Task implements Serializable, Cloneable {
 
     }
     public Date nextTimeAfter(Date current){
-        if (current.after(end) || current.equals(end))return null;
+        if (current.after(end) || current.equals(end))
+            return null;
         if (isRepeated() && isActive()){
             Date timeBefore  = start;
-            Date timeAfter = start;
+            Date timeAfter = start; // poate se pune end aici
             if (current.before(start)){
                 return start;
             }
             if ((current.after(start) || current.equals(start)) && (current.before(end) || current.equals(end))){
                 for (long i = start.getTime(); i <= end.getTime(); i += interval*1000){
-                    if (current.equals(timeAfter)) return new Date(timeAfter.getTime()+interval*1000);
-                    if (current.after(timeBefore) && current.before(timeAfter)) return timeBefore;//return timeAfter
+                    if (current.equals(timeAfter))
+                        return new Date(timeAfter.getTime()+interval*1000);
+                    if (current.after(timeBefore) && current.before(timeAfter))
+                        return timeBefore;//return timeAfter
                     timeBefore = timeAfter;
                     timeAfter = new Date(timeAfter.getTime()+ interval*1000);
                 }

@@ -44,7 +44,7 @@ public class LinkedTaskList  extends TaskList {
         }
     }
     private int numberOfTasks;
-    private Node last;
+    private transient Node last;
 
     @Override
     public void add(Task task) {

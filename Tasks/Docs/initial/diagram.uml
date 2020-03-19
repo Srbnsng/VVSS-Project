@@ -3,22 +3,33 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="290.0" y="1779.4965327458897">tasks.model.TasksOperations</node>
-    <node x="268.8716329447469" y="732.8714242575703">tasks.model.TaskList</node>
-    <node x="1575.704223520644" y="0.0">tasks.services.DateService</node>
-    <node x="1041.704223520644" y="0.0">tasks.services.TaskIO</node>
+    <node x="335.0" y="1650.252511135311">tasks.controller.Notificator</node>
+    <node x="1124.0" y="1650.252511135311">tasks.model.TasksOperations</node>
+    <node x="245.98467915153583" y="666.3123078812416">tasks.model.TaskList</node>
+    <node x="0.0" y="1650.252511135311">tasks.services.DateService</node>
+    <node x="1685.2969772983008" y="0.0">tasks.services.TaskIO</node>
     <node x="0.0" y="0.0">tasks.model.LinkedTaskList.Node</node>
-    <node x="297.3757658492156" y="1045.5781361773265">tasks.model.ArrayTaskList</node>
-    <node x="306.6213403855737" y="1573.4965327458897">tasks.model.ArrayTaskList.ArrayTaskListIterator</node>
-    <node x="532.704223520644" y="108.08481547721681">tasks.model.LinkedTaskList.LinkedTaskListIterator</node>
-    <node x="763.704223520644" y="0.0">tasks.model.Task</node>
-    <node x="653.0" y="1779.4965327458897">tasks.controller</node>
-    <node x="1338.704223520644" y="0.0">tasks.view.Main</node>
-    <node x="0.0" y="1779.4965327458897">tasks.services.TasksService</node>
-    <node x="270.34071490993796" y="265.4016547889422">tasks.model.LinkedTaskList</node>
+    <node x="270.58486731860546" y="984.2323281023636">tasks.model.ArrayTaskList</node>
+    <node x="269.0618120122956" y="1466.252511135311">tasks.model.ArrayTaskList.ArrayTaskListIterator</node>
+    <node x="1491.0" y="1650.252511135311">tasks.view</node>
+    <node x="1062.2969772983008" y="0.0">tasks.controller.Controller</node>
+    <node x="1402.2969772983008" y="0.0">tasks.model.Task</node>
+    <node x="489.29697729830076" y="76.6089800421031">tasks.model.LinkedTaskList.LinkedTaskListIterator</node>
+    <node x="612.0" y="1650.252511135311">tasks.controller.TaskInfoController</node>
+    <node x="738.2969772983008" y="0.0">tasks.controller.NewEditController</node>
+    <node x="832.0" y="1650.252511135311">tasks.services.TasksService</node>
+    <node x="250.89466245946358" y="235.86538238100798">tasks.model.LinkedTaskList</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="tasks.model.LinkedTaskList.LinkedTaskListIterator" target="tasks.model.LinkedTaskList">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tasks.model.ArrayTaskList" target="tasks.model.TaskList">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
     <edge source="tasks.model.LinkedTaskList.Node" target="tasks.model.LinkedTaskList">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
@@ -31,23 +42,17 @@
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
-    <edge source="tasks.model.LinkedTaskList.LinkedTaskListIterator" target="tasks.model.LinkedTaskList">
-      <point x="0.0" y="0.0" />
-      <point x="0.0" y="0.0" />
-    </edge>
-    <edge source="tasks.model.ArrayTaskList" target="tasks.model.TaskList">
-      <point x="0.0" y="0.0" />
-      <point x="0.0" y="0.0" />
-    </edge>
   </edges>
-  <settings layout="Balloon" zoom="0.16430317848410758" x="929.5" y="1012.5" />
-  <SelectedNodes />
+  <settings layout="Balloon" zoom="0.9" x="1385.111111111111" y="220.0" />
+  <SelectedNodes>
+    <node>tasks.model.Task</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>
     <Category>Methods</Category>
-    <Category>Properties</Category>
     <Category>Inner Classes</Category>
+    <Category>Properties</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
