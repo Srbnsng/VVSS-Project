@@ -1,4 +1,4 @@
-package tasks.services;
+package tasks.service;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

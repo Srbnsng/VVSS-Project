@@ -14,9 +14,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import tasks.model.Task;
-import tasks.services.DateService;
-import tasks.services.TaskIO;
-import tasks.services.TasksService;
+import tasks.service.DateService;
+import tasks.utils.TaskIO;
+import tasks.service.TasksService;
 import tasks.view.Main;
 
 import java.io.IOException;
@@ -25,16 +25,15 @@ import java.util.ArrayList;
 import java.util.Date;
 
 
-public class Controller {
-    private static final Logger log = Logger.getLogger(Controller.class.getName());
-    public ObservableList<Task> tasksList;
-    TasksService service;
-    DateService dateService;
+public class MainController {
+    private static final Logger log = Logger.getLogger(MainController.class.getName());
+    private ObservableList<Task> tasksList;
+    private TasksService service;
+    private DateService dateService;
 
-    public static Stage editNewStage;
     public static Stage infoStage;
 
-    public static TableView mainTable;
+    private static TableView mainTable;
 
     @FXML
     public  TableView tasks;
@@ -87,10 +86,10 @@ public class Controller {
         NewEditController.setClickedButton((Button) source);
 
         try {
-            editNewStage = new Stage();
+            Stage editNewStage = new Stage();
             NewEditController.setCurrentStage(editNewStage);
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/new-edit-task.fxml"));
-            Parent root = loader.load();//getClass().getResource("/fxml/new-edit-task.fxml"));
+            Parent root = loader.load();
             NewEditController editCtrl = loader.getController();
             editCtrl.setService(service);
             editCtrl.setTasksList(tasksList);

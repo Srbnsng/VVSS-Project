@@ -1,4 +1,4 @@
-package tasks.services;
+package tasks.service;
 
 
 import java.time.Instant;
@@ -6,7 +6,6 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 import static java.util.Calendar.getInstance;
 

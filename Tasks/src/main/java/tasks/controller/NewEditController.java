@@ -14,9 +14,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import tasks.model.Task;
-import tasks.services.DateService;
-import tasks.services.TaskIO;
-import tasks.services.TasksService;
+import tasks.service.DateService;
+import tasks.utils.TaskIO;
+import tasks.service.TasksService;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -158,11 +158,11 @@ public class NewEditController {
             currentTask = null;
         }
         TaskIO.rewriteFile(tasksList);
-        Controller.editNewStage.close();
+        MainController.editNewStage.close();
     }
     @FXML
     public void closeDialogWindow(){
-        Controller.editNewStage.close();
+        MainController.editNewStage.close();
     }
 
     private Task collectFieldsData(){

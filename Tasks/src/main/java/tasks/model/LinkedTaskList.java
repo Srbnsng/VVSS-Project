@@ -177,7 +177,7 @@ public class LinkedTaskList  extends TaskList {
                 '}';
     }
     @Override
-    protected LinkedTaskList clone() throws CloneNotSupportedException {
+    protected LinkedTaskList clone(){
         LinkedTaskList tasks = new LinkedTaskList();
         for (Task t : this){
             tasks.add(t);

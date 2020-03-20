@@ -138,7 +138,7 @@ public class ArrayTaskList extends TaskList{
                 '}';
     }
     @Override
-    protected ArrayTaskList clone() throws CloneNotSupportedException {
+    protected ArrayTaskList clone() {
         ArrayTaskList taskList = new ArrayTaskList();
         for (int i = 0; i < this.tasks.length; i++){
             taskList.add(this.getTask(i));

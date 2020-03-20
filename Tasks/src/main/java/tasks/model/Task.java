@@ -1,7 +1,7 @@
 package tasks.model;
 
 import org.apache.log4j.Logger;
-import tasks.services.TaskIO;
+import tasks.utils.TaskIO;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
@@ -19,9 +19,6 @@ public class Task implements Serializable, Cloneable {
     private static final Logger log = Logger.getLogger(Task.class.getName());
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
-    public static SimpleDateFormat getDateFormat(){
-        return sdf;
-    }
     public Task(String title, Date time){
         if (time.getTime() < 0) {
             log.error("time below bound");
@@ -52,10 +49,6 @@ public class Task implements Serializable, Cloneable {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public boolean isActive(){
         return this.active;
     }
@@ -68,13 +61,6 @@ public class Task implements Serializable, Cloneable {
         return time;
     }
 
-    public void setTime(Date time) {
-        this.time = time;
-        this.start = time;
-        this.end = time;
-        this.interval = 0;
-    }
-
     public Date getStartTime() {
         return start;
     }
@@ -84,18 +70,11 @@ public class Task implements Serializable, Cloneable {
     }
 
     public int getRepeatInterval(){
-        return interval > 0 ? interval : 0;
+        return Math.max(interval, 0);
     }
 
-    public void setTime(Date start, Date end, int interval){
-        this.time = start;
-        this.start = start;
-        this.end = end;
-        this.interval = interval;
-
-    }
     public boolean isRepeated(){
-        return !(this.interval == 0);
+        return this.interval != 0;
 
     }
     public Date nextTimeAfter(Date current){
