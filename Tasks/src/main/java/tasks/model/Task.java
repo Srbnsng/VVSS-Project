@@ -13,6 +13,11 @@ public class Task implements Serializable, Cloneable {
     private Date time;
     private Date start;
     private Date end;
+
+    public void setInterval(int interval) {
+        this.interval = interval;
+    }
+
     private int interval;
     private boolean active;
 
@@ -72,6 +77,20 @@ public class Task implements Serializable, Cloneable {
     public int getRepeatInterval(){
         return Math.max(interval, 0);
     }
+
+
+    public void setStart(Date start) {
+        this.start = start;
+    }
+
+    public void setEnd(Date end) {
+        this.end = end;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
 
     public boolean isRepeated(){
         return this.interval != 0;
