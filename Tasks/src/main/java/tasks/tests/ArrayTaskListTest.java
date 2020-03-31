@@ -18,23 +18,23 @@ class ArrayTaskListTest {
 
     @BeforeAll
     static void init() {
-        arrayTaskList=new ArrayTaskList();
         task = new Task("Description", new Date(2020, 3, 30), new Date(2020, 3, 30), 2);
     }
 
     @BeforeEach
     void setUp() {
+        arrayTaskList=new ArrayTaskList();
         task.setTitle("Description");
         task.setStart(new Date(2020, 3, 30));
         task.setEnd(new Date(2020, 3, 30));
         task.setInterval(2);
     }
 
-    @RepeatedTest(value = 5, name = "{displayName} {currentRepetition}/{totalRepetitions}")
-    @DisplayName("RepeatingTest")
-    void TC01_EC(RepetitionInfo repInfo) {
+    @DisplayName("Test 1")
+    @Test
+    void TC01_EC() {
         arrayTaskList.add(task);
-        assertTrue(arrayTaskList.getAll().size() == repInfo.getCurrentRepetition());
+        assertTrue(arrayTaskList.getAll().size() == 1);
     }
 
     @Test
