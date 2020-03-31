@@ -23,17 +23,19 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.logging.FileHandler;
 
 
 public class MainController {
     private static final Logger log = Logger.getLogger(MainController.class.getName());
+    public static Stage editNewStage;
     private ObservableList<Task> tasksList;
     private TasksService service;
     private DateService dateService;
 
     public static Stage infoStage;
 
-    private static TableView mainTable;
+    public static TableView mainTable;
 
     @FXML
     public  TableView tasks;
@@ -86,7 +88,7 @@ public class MainController {
         NewEditController.setClickedButton((Button) source);
 
         try {
-            Stage editNewStage = new Stage();
+            editNewStage=new Stage();
             NewEditController.setCurrentStage(editNewStage);
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/new-edit-task.fxml"));
             Parent root = loader.load();
