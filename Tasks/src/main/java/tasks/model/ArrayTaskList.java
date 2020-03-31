@@ -52,8 +52,10 @@ public class ArrayTaskList extends TaskList{
     }
 
     @Override
-    public void add(Task task){
+    public void add(Task task) throws Exception {
         if (task==null) throw new NullPointerException("Task shouldn't be null");
+        if(task.getInterval() <0) throw new Exception("Invalid interval");
+        if(task.getTitle()=="") throw new Exception("Empty description");
         if (numberOfTasks == currentCapacity-1){
             currentCapacity = currentCapacity * 2;
             Task[] withAddedTask = new Task[currentCapacity];
@@ -141,7 +143,11 @@ public class ArrayTaskList extends TaskList{
     protected ArrayTaskList clone() {
         ArrayTaskList taskList = new ArrayTaskList();
         for (int i = 0; i < this.tasks.length; i++){
-            taskList.add(this.getTask(i));
+            try {
+                taskList.add(this.getTask(i));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         return taskList;
 

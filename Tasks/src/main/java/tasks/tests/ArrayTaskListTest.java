@@ -21,7 +21,7 @@ class ArrayTaskListTest {
         task = new Task("Description", new Date(2020, 3, 30), new Date(2020, 3, 30), 2);
     }
 
-    @BeforeEach
+    @BeforeEach@DisplayName("Test 1")
     void setUp() {
         arrayTaskList=new ArrayTaskList();
         task.setTitle("Description");
@@ -30,15 +30,14 @@ class ArrayTaskListTest {
         task.setInterval(2);
     }
 
-    @DisplayName("Test 1")
     @Test
-    void TC01_EC() {
+    void TC01_EC() throws Exception {
         arrayTaskList.add(task);
         assertTrue(arrayTaskList.getAll().size() == 1);
     }
 
     @Test
-    void TC02_EC() {
+    void TC02_EC() throws Exception {
         task.setInterval(6);
         arrayTaskList.add(task);
         assertTrue(arrayTaskList.getAll().size() == 1);
@@ -72,7 +71,7 @@ class ArrayTaskListTest {
 
 
     @Test
-    void TC01_BVA() {
+    void TC01_BVA() throws Exception {
         task.setTitle("M");
         arrayTaskList.add(task);
         assertTrue(arrayTaskList.getAll().size() == 1);
@@ -92,16 +91,15 @@ class ArrayTaskListTest {
     }
 
     @Test
-    void TC03_BVA() {
+    void TC03_BVA() throws Exception {
         task.setInterval(0);
         arrayTaskList.add(task);
         assertTrue(arrayTaskList.getAll().size() == 1);
     }
 
     @Test
-    void TC04_BVA() {
+    void TC04_BVA() throws Exception {
         task.setInterval(-1);
-        arrayTaskList.add(task);
         Exception exception = assertThrows(Exception.class, () -> {
             arrayTaskList.add(task);
         });

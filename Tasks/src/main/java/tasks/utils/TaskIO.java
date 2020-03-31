@@ -38,7 +38,7 @@ public class TaskIO {
             }
         }
     }
-    public static void read(TaskList tasks, InputStream in)throws IOException {
+    public static void read(TaskList tasks, InputStream in) throws Exception {
         try (DataInputStream dataInputStream = new DataInputStream(in)) {
             int listLength = dataInputStream.readInt();
             for (int i = 0; i < listLength; i++) {
@@ -67,7 +67,7 @@ public class TaskIO {
         }
     }
 
-    public static void readBinary(TaskList tasks, File file) throws IOException{
+    public static void readBinary(TaskList tasks, File file) throws Exception {
         try (FileInputStream fis = new FileInputStream(file)) {
             read(tasks, fis);
         } catch (IOException e) {
@@ -86,7 +86,7 @@ public class TaskIO {
 
     }
 
-    public static void read(TaskList tasks, Reader in)  throws IOException {
+    public static void read(TaskList tasks, Reader in) throws Exception {
         BufferedReader reader = new BufferedReader(in);
         String line;
         Task t;
@@ -105,7 +105,7 @@ public class TaskIO {
         }
 
     }
-    public static void readText(TaskList tasks, File file) throws IOException {
+    public static void readText(TaskList tasks, File file) throws Exception {
         try (FileReader fileReader = new FileReader(file)) {
             read(tasks, fileReader);
         }

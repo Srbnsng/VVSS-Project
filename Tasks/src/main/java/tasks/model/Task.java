@@ -14,6 +14,10 @@ public class Task implements Serializable, Cloneable {
     private Date start;
     private Date end;
 
+    public int getInterval() {
+        return interval;
+    }
+
     public void setInterval(int interval) {
         this.interval = interval;
     }
