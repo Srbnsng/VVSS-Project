@@ -2,28 +2,34 @@ package tasks.model;
 
 import javafx.collections.ObservableList;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class TasksOperations {
 
     public ArrayList<Task> tasks;
 
-    public TasksOperations(ObservableList<Task> tasksList){
-        tasks=new ArrayList<>();
+    public TasksOperations(ObservableList<Task> tasksList) {
+        tasks = new ArrayList<>();
         tasks.addAll(tasksList);
     }
 
-    public Iterable<Task> incoming(Date start, Date end){
-        System.out.println(start);
-        System.out.println(end);
+
+    public Iterable<Task> incoming(Date start, Date end) {
         ArrayList<Task> incomingTasks = new ArrayList<>();
-        for (Task t : tasks) {
+        int i = 0;
+        while (i < tasks.size()) {
+            Task t = tasks.get(i);
             Date nextTime = t.nextTimeAfter(start);
-            if (nextTime != null && (nextTime.before(end) || nextTime.equals(end))) {
-                incomingTasks.add(t);
-                System.out.println(t.getTitle());
+            if (nextTime != null) {
+                if (nextTime.before(end)) {
+                    incomingTasks.add(t);
+                } else if (nextTime.equals(end)) {
+                    incomingTasks.add(t);
+                }
             }
+            i++;
         }
-        return incomingTasks;
+        return incomingTasks;//12
     }
 }
