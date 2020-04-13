@@ -103,5 +103,23 @@ class TasksOperationsTest {
         assertTrue(returnedFilteredList.size()==1);
     }
 
+    @Test
+    void invalidTestWhereDateIsInvalid(){
+        //set up
+        List<Task> taskList = new ArrayList<>();
+        //reversed dates end<start
+        Task t=new Task("task1", new Date(2020,  Calendar.MARCH, 13,3,0),new Date(2019,  Calendar.MARCH, 10,3,0),  3);
+        taskList.add(t);
+        ObservableList<Task> tasksList = FXCollections.observableArrayList(taskList);
+        TasksOperations tasksOperations = new TasksOperations(tasksList);
+
+        //act
+        List<Task> returnedFilteredList=(List<Task>)tasksOperations.incoming( new Date(2020, Calendar.MARCH, 11,12,0), new Date(2020,  Calendar.MARCH, 13,3,0));
+
+
+        //assert
+        assertTrue(returnedFilteredList.size()==0);
+    }
+
 
 }
