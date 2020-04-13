@@ -23,7 +23,7 @@ public class Task implements Serializable, Cloneable {
     }
 
     private int interval;
-    private boolean active;
+    public boolean active=true;
 
     private static final Logger log = Logger.getLogger(Task.class.getName());
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
