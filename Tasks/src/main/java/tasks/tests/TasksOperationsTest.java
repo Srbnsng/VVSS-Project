@@ -97,7 +97,7 @@ class TasksOperationsTest {
         TasksOperations tasksOperations = new TasksOperations(tasksList);
 
         //act
-        List<Task> returnedFilteredList=(List<Task>)tasksOperations.incoming( new Date(2020, Calendar.MARCH, 11,12,0), new Date(2020,  Calendar.MARCH, 13,3,0));
+        List<Task> returnedFilteredList=(List<Task>)tasksOperations.incoming( new Date(2020, Calendar.MARCH, 11,12,0), new Date(2020,  Calendar.MARCH, 12,3,0));
 
         //assert
         assertTrue(returnedFilteredList.size()==1);
