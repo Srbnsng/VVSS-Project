@@ -1,0 +1,14 @@
+
+^	java:S125"<This block of commented-out lines of code should be removed.(À›¸Öûÿÿÿÿ8÷‘Ÿ.
+R
+java:S1481-"0Remove this unused "titleLength" local variable.(ìôå‰ÿÿÿÿÿ8–¤¿ü.
+U
+java:S1118":Add a private constructor to hide the implicit public one.(Ğœê†úÿÿÿÿ
+u
+java:S3776†"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(œÂÁñøÿÿÿÿ8Â‰Àü.
+D
+java:S1659¹"!Declare "end" on a separate line.(ÍôÁÑıÿÿÿÿ8÷‘Ÿ.
+‚
+java:S1192B"eDefine a constant instead of duplicating this literal "IO exception reading or writing file" 4 times.(ÌÔü¦8Ê¿ü.
+K
+java:S2885"/Make "SIMPLE_DATE_FORMAT" an instance variable.(Ÿş8«ã¡.

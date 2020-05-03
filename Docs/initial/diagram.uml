@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="306.0" y="1576.318772340583">tasks.view</node>
+    <node x="1301.2812629342716" y="0.0">tasks.controller.Notificator</node>
+    <node x="264.0896183563136" y="662.938934999113">tasks.model.TaskList</node>
+    <node x="0.0" y="1576.318772340583">tasks.model.TasksOperations</node>
+    <node x="489.2812629342716" y="76.9898894546584">tasks.model.LinkedTaskList.LinkedTaskListIterator</node>
+    <node x="1578.2812629342716" y="0.0">tasks.controller.TaskInfoController</node>
+    <node x="1062.2812629342716" y="0.0">tasks.model.Task</node>
+    <node x="0.0" y="0.0">tasks.model.LinkedTaskList.Node</node>
+    <node x="738.2812629342716" y="0.0">tasks.controller.NewEditController</node>
+    <node x="267.97844578594567" y="910.2916983560699">tasks.model.ArrayTaskList</node>
+    <node x="250.69622645212718" y="236.05963732299386">tasks.model.LinkedTaskList</node>
+    <node x="530.181655498841" y="1304.318772340583">tasks.model.ArrayTaskList.ArrayTaskListIterator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="tasks.model.LinkedTaskList.LinkedTaskListIterator" target="tasks.model.LinkedTaskList">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tasks.model.ArrayTaskList" target="tasks.model.TaskList">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tasks.model.LinkedTaskList.Node" target="tasks.model.LinkedTaskList">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tasks.model.LinkedTaskList" target="tasks.model.TaskList">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tasks.model.ArrayTaskList.ArrayTaskListIterator" target="tasks.model.ArrayTaskList">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Balloon" zoom="0.5000000000000001" x="885.8888888888891" y="1053.0" />
+  <SelectedNodes>
+    <node>tasks.model.ArrayTaskList.ArrayTaskListIterator</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

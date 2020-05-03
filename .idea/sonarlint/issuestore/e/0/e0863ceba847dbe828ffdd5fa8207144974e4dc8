@@ -1,0 +1,7 @@
+
+C
+java:S1144Š",Remove this unused private "setTask" method.(İŠÒ
+i
+java:S2975´"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(¼Üü
+^
+java:S1182´"HUse super.clone() to create and seed the cloned instance to be returned.(¼Üü

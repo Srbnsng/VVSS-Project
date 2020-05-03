@@ -1,0 +1,22 @@
+
+p
+java:S1104#"UMake infoStage a static final constant or non-public and provide accessors if needed.(ßÏ¬Üùÿÿÿÿ
+n
+java:S1104""XMake editNewStage a static final constant or non-public and provide accessors if needed.(¿‰‚×
+k
+java:S1104%"UMake mainTable a static final constant or non-public and provide accessors if needed.(ãÖÐ·
+p
+java:S1104"UMake tasksList a static final constant or non-public and provide accessors if needed.(ß·Š¢ÿÿÿÿÿ
+V	java:S125]"<This block of commented-out lines of code should be removed.(ÁÄûöþÿÿÿÿ
+K
+java:S2696|"6Make the enclosing method "static" or remove this set.(–žÌJ
+E
+java:S1444%"/Make this "public static mainTable" field final(ãÖÐ·
+H
+java:S1444""2Make this "public static editNewStage" field final(¿‰‚×
+J
+java:S1444#"/Make this "public static infoStage" field final(ßÏ¬Üùÿÿÿÿ
+Q
+java:S2696@"6Make the enclosing method "static" or remove this set.(ôé½ºûÿÿÿÿ
+L
+java:S2696Z"6Make the enclosing method "static" or remove this set.(ã¯›ð

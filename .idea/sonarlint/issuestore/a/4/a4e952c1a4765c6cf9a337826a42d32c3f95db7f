@@ -1,0 +1,17 @@
+
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ù‰ï…8Ø˜±ûŽ.
+]	java:S125 "<This block of commented-out lines of code should be removed.(é±¨ãÿÿÿÿÿ8Ø˜±ûŽ.
+E
+java:S11489"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Ø˜±ûŽ.
+z
+java:S1104"XMake primaryStage a static final constant or non-public and provide accessors if needed.(¢Ñû¦ûÿÿÿÿ8Ø˜±ûŽ.
+I
+java:S1602<",Remove useless curly braces around statement(çöÔˆ8Ø˜±ûŽ.
+X	java:S125-"<This block of commented-out lines of code should be removed.(€â³Ö8Ø˜±ûŽ.
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ðÕÈ€8Ø˜±ûŽ.
+w
+java:S1104"ZMake savedTasksFile a static final constant or non-public and provide accessors if needed.(¼Çü¦8Ø˜±ûŽ.
+Q
+java:S1444"4Make this "public static savedTasksFile" field final(¼Çü¦8Ø˜±ûŽ.
+T
+java:S1444"2Make this "public static primaryStage" field final(¢Ñû¦ûÿÿÿÿ8Ø˜±ûŽ.

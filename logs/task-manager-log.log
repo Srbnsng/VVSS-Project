@@ -1,0 +1,43 @@
+2020-03-18 20:06:50 INFO  Main:38 - saved data reading
+2020-03-18 20:06:50 INFO  Main:43 - application start
+2020-03-18 20:06:52 INFO  Controller:75 - Main controller initializing
+2020-03-18 22:14:02 INFO  Main:38 - saved data reading
+2020-03-18 22:14:02 INFO  Main:43 - application start
+2020-03-18 22:14:03 INFO  Controller:75 - Main controller initializing
+2020-03-18 22:14:17 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:18:57 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:19:11 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:19:13 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:19:24 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:20:00 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:20:10 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:20:12 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:20:28 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:21:33 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:22:13 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:24:22 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:24:26 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:25:17 INFO  NewEditController:91 - new/edit window initializing
+2020-03-18 22:25:36 INFO  NewEditController:91 - new/edit window initializing
+2020-03-19 01:06:45 INFO  Main:38 - saved data reading
+2020-03-19 01:06:45 INFO  Main:43 - application start
+2020-03-19 01:06:48 INFO  Controller:75 - Main controller initializing
+2020-03-19 01:06:59 INFO  NewEditController:91 - new/edit window initializing
+2020-03-19 01:08:26 INFO  TaskInfoController:26 - task info window initializing
+2020-03-19 01:08:30 INFO  TaskInfoController:26 - task info window initializing
+2020-03-19 01:11:00 INFO  TaskInfoController:26 - task info window initializing
+2020-03-19 01:37:28 INFO  NewEditController:91 - new/edit window initializing
+2020-03-19 01:37:43 INFO  TaskInfoController:26 - task info window initializing
+2020-03-19 01:37:46 INFO  TaskInfoController:26 - task info window initializing
+2020-03-19 01:41:23 INFO  Main:38 - saved data reading
+2020-03-19 01:41:23 INFO  Main:43 - application start
+2020-03-19 01:41:24 INFO  Controller:75 - Main controller initializing
+2020-03-19 01:43:02 INFO  Main:38 - saved data reading
+2020-03-19 01:43:02 INFO  Main:43 - application start
+2020-03-19 01:43:02 INFO  Controller:75 - Main controller initializing
+2020-03-19 01:48:32 INFO  Main:38 - saved data reading
+2020-03-19 01:48:32 INFO  Main:43 - application start
+2020-03-19 01:48:32 INFO  Controller:75 - Main controller initializing
+2020-03-31 18:31:51 INFO  Main:38 - saved data reading
+2020-03-31 18:31:51 INFO  Main:43 - application start
+2020-03-31 18:31:52 INFO  MainController:76 - Main controller initializing
