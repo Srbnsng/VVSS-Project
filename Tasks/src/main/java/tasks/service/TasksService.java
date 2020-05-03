@@ -51,4 +51,8 @@ public class TasksService {
 
         return filtered;
     }
+
+    public boolean deleteTask(Task task){
+        return this.tasks.remove(task);
+    }
 }
