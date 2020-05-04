@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="changed pom">
+    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/ArrayTaskListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/ArrayTaskListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/TasksOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/TasksOperationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/services/IntegrationERSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/services/IntegrationERSTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/services/IntegrationRSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/services/IntegrationRSTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/services/TaskIOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/services/TaskIOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/services/TasksServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/services/TasksServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/TaskList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/TasksOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/TasksOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/service/TasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/service/TasksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/utils/TaskIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/utils/TaskIO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/ArrayTaskListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/test1/ArrayTaskListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/TasksOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/test2/TasksOperationsTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +140,7 @@
       <workItem from="1586790791744" duration="6643000" />
       <workItem from="1586939599666" duration="2947000" />
       <workItem from="1588524743319" duration="4145000" />
-      <workItem from="1588534763907" duration="5959000" />
+      <workItem from="1588534763907" duration="7221000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored code/diagram + review report (./Docs/refactored)">
       <created>1584634873240</created>
@@ -231,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588580908561</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="changed pom">
+      <created>1588581975352</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588581975352</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

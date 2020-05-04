@@ -1,4 +1,4 @@
-package tasks;
+package tasks.test1;
 
 import org.junit.jupiter.api.*;
 import tasks.model.ArrayTaskList;
