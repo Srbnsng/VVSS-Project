@@ -1,4 +1,4 @@
-package tasks.tests.services;
+package tasks.services;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,13 +13,14 @@ import tasks.service.TasksService;
 
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.times;
 
-public class IntegrationERSTest {
+public class IntegrationRSTest {
 
     @Mock
     private ArrayTaskList arrayTaskList;
@@ -37,42 +38,37 @@ public class IntegrationERSTest {
     }
 
     @Test
-    void testGetAll(){
+    void testDeleteTask() throws Exception {
+
         //set up
         Date date = new Date(2013, Calendar.FEBRUARY, 7);
         Task task = new Task("Task",date);
 
         //act
-        Mockito.when(arrayTaskList.getAll()).thenReturn(Arrays.asList(task));
+        Mockito.doNothing().when(arrayTaskList).add(task);
+        this.arrayTaskList.add(task);
+        Mockito.verify(arrayTaskList, times(1)).add(task);
+        Mockito.when(arrayTaskList.remove(task)).thenReturn(true);
+        boolean ok = this.tasksService.deleteTask(task);
+        Mockito.verify(arrayTaskList, times(1)).remove(task);
 
-
-        //assert and verify
-        assertEquals(this.tasksService.getObservableList().get(0).getTitle(),"Task");
-        assertEquals(this.tasksService.getObservableList().get(0).getTime(),date);
-
-        Mockito.verify(arrayTaskList, times(2)).getAll();
-
+        //assert
+        assertTrue (ok);
     }
 
     @Test
-    void testeAdd() throws Exception {
+    void testAddTask(){
         //set up
-        Date date = new GregorianCalendar(2013, Calendar.FEBRUARY, 7).getTime();
+        Date date = new Date(2013, Calendar.FEBRUARY, 7);
         Task task = new Task("Task",date);
 
         //act
-        Mockito.doNothing().when(arrayTaskList).add(task);
-        this.arrayTaskList.add(task);
-
-        Mockito.verify(arrayTaskList, times(1)).add(task);
-
-        Mockito.when(arrayTaskList.getAll()).thenReturn(Arrays.asList(task));
-        boolean status = arrayTaskList.getAll().size() == 1;
+        Mockito.when(arrayTaskList.getAll()).thenReturn(Collections.singletonList(task));
 
         //assert and verify
+        assertEquals(this.tasksService.getObservableList().size(),1);
         Mockito.verify(arrayTaskList, times(1)).getAll();
-
-
-        assertEquals(status,true);
     }
+
+
 }

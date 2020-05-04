@@ -1,14 +1,14 @@
-package tasks.tests;
+package tasks;
 
 import org.junit.jupiter.api.*;
 import tasks.model.ArrayTaskList;
 import tasks.model.LinkedTaskList;
 import tasks.model.Task;
 
+import java.util.Calendar;
 import java.util.Date;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 //The @Tag annotation is useful when we want to create a test pack with selected tests.
 @Tag("F01_BBT")
@@ -18,29 +18,29 @@ class ArrayTaskListTest {
 
     @BeforeAll
     static void init() {
-        task = new Task("Description", new Date(2020, 3, 30), new Date(2020, 3, 30), 2);
+        task = new Task("Description", new Date(2020, Calendar.APRIL, 30), new Date(2020, Calendar.APRIL, 30), 2);
     }
 
     @BeforeEach@DisplayName("Test 1")
     void setUp() {
         arrayTaskList=new ArrayTaskList();
         task.setTitle("Description");
-        task.setStart(new Date(2020, 3, 30));
-        task.setEnd(new Date(2020, 3, 30));
+        task.setStart(new Date(2020, Calendar.APRIL, 30));
+        task.setEnd(new Date(2020, Calendar.APRIL, 30));
         task.setInterval(2);
     }
 
     @Test
     void TC01_EC() throws Exception {
         arrayTaskList.add(task);
-        assertTrue(arrayTaskList.getAll().size() == 1);
+        assertEquals(1, arrayTaskList.getAll().size());
     }
 
     @Test
     void TC02_EC() throws Exception {
         task.setInterval(6);
         arrayTaskList.add(task);
-        assertTrue(arrayTaskList.getAll().size() == 1);
+        assertEquals(1, arrayTaskList.getAll().size());
     }
 
     @Test
@@ -74,7 +74,7 @@ class ArrayTaskListTest {
     void TC01_BVA() throws Exception {
         task.setTitle("M");
         arrayTaskList.add(task);
-        assertTrue(arrayTaskList.getAll().size() == 1);
+        assertEquals(1, arrayTaskList.getAll().size());
     }
 
     @Test
@@ -94,7 +94,7 @@ class ArrayTaskListTest {
     void TC03_BVA() throws Exception {
         task.setInterval(0);
         arrayTaskList.add(task);
-        assertTrue(arrayTaskList.getAll().size() == 1);
+        assertEquals(1, arrayTaskList.getAll().size());
     }
 
     @Test

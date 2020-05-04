@@ -1,4 +1,4 @@
-package tasks.tests.services;
+package tasks.services;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package tasks.tests.services;
+package tasks.services;
 
 import javafx.collections.ObservableList;
 import org.junit.jupiter.api.AfterEach;
@@ -45,7 +45,7 @@ class TasksServiceTest {
         //act
         this.arrayTaskList.add(task);
         this.arrayTaskList.add(task2);
-        Mockito.doReturn(Arrays.asList(task)).when(arrayTaskList).getAll();
+        Mockito.doReturn(Collections.singletonList(task)).when(arrayTaskList).getAll();
         ObservableList<Task> observableList = this.tasksService.getObservableList();
 
         //assert and verify
@@ -67,7 +67,7 @@ class TasksServiceTest {
         //act
         this.arrayTaskList.add(task);
         this.arrayTaskList.add(anotherTask);
-        Mockito.doReturn(Arrays.asList(task)).when(arrayTaskList).getAll();
+        Mockito.doReturn(Collections.singletonList(task)).when(arrayTaskList).getAll();
         ArrayList<Task> taskList = (ArrayList<Task>) this.tasksService.filterTasks(date, testDate);
 
         //assert

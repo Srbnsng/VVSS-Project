@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="Refactored pom">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="changed pom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/ArrayTaskListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/ArrayTaskListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/TasksOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/TasksOperationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/services/IntegrationERSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/services/IntegrationERSTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/services/IntegrationRSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/services/IntegrationRSTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/services/TaskIOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/services/TaskIOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/tests/services/TasksServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/services/TasksServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/TaskList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/TasksOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/TasksOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/service/TasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/service/TasksService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/utils/TaskIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/utils/TaskIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +73,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="tasks" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Serban\Desktop\Anul3Sem2\VVSS\Tasks\Tasks\Docs\refactored" />
     </key>
@@ -137,7 +152,7 @@
       <workItem from="1586790791744" duration="6643000" />
       <workItem from="1586939599666" duration="2947000" />
       <workItem from="1588524743319" duration="4145000" />
-      <workItem from="1588534763907" duration="1224000" />
+      <workItem from="1588534763907" duration="5959000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored code/diagram + review report (./Docs/refactored)">
       <created>1584634873240</created>
@@ -181,7 +196,42 @@
       <option name="project" value="LOCAL" />
       <updated>1588535923039</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactored pom v2">
+      <created>1588536016963</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588536016963</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Refactored pom v3">
+      <created>1588536204151</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588536204151</updated>
+    </task>
+    <task id="LOCAL-00009" summary="surefire version changing">
+      <created>1588536749440</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588536749440</updated>
+    </task>
+    <task id="LOCAL-00010" summary="surefire version changing">
+      <created>1588542651326</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588542651326</updated>
+    </task>
+    <task id="LOCAL-00011" summary="changed folder for tests">
+      <created>1588580908561</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588580908561</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +261,12 @@
     <MESSAGE value="Added Lab2 folder in Docs" />
     <MESSAGE value="Added Lab3 folder with the excel file and testlink doc" />
     <MESSAGE value="Refactored pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored pom" />
+    <MESSAGE value="Refactored pom v2" />
+    <MESSAGE value="Refactored pom v3" />
+    <MESSAGE value="surefire version changing" />
+    <MESSAGE value="changed folder for tests" />
+    <MESSAGE value="changed pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed pom" />
   </component>
   <component name="WindowStateProjectService">
     <state x="271" y="0" key="#Tasks_[exec:java]" />

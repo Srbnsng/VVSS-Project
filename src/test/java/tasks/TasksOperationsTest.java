@@ -1,4 +1,4 @@
-package tasks.tests;
+package tasks;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,6 +12,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class TasksOperationsTest {
@@ -33,7 +34,7 @@ class TasksOperationsTest {
         List<Task> returnedFilteredList=(List<Task>)tasksOperations2.incoming( new Date(2020, Calendar.FEBRUARY, 12,12,0), new Date(2020, Calendar.JUNE, 12,12,0));
 
         //assert
-        assertTrue(returnedFilteredList.size()==0);
+        assertEquals(0, returnedFilteredList.size());
     }
 
     //F02_TC02
@@ -51,7 +52,7 @@ class TasksOperationsTest {
         List<Task> returnedFilteredList=(List<Task>)tasksOperations.incoming( new Date(2020, Calendar.MARCH, 11,12,0), new Date(2020,  Calendar.APRIL, 16,12,0));
 
         //assert
-        assertTrue(returnedFilteredList.size()==3);
+        assertEquals(3, returnedFilteredList.size());
     }
 
 
@@ -70,7 +71,7 @@ class TasksOperationsTest {
         List<Task> returnedFilteredList=(List<Task>)tasksOperations.incoming( new Date(2020, Calendar.MARCH, 11,12,0), new Date(2020,  Calendar.APRIL, 16,12,0));
 
         //assert
-        assertTrue(returnedFilteredList.size()==0);
+        assertEquals(0, returnedFilteredList.size());
     }
 
     //F02_TC04
@@ -87,7 +88,7 @@ class TasksOperationsTest {
         List<Task> returnedFilteredList=(List<Task>)tasksOperations.incoming( new Date(2020, Calendar.MARCH, 11,12,0), new Date(2020,  Calendar.APRIL, 16,12,0));
 
         //assert
-        assertTrue(returnedFilteredList.size()==1);
+        assertEquals(1, returnedFilteredList.size());
     }
 
 
@@ -105,7 +106,7 @@ class TasksOperationsTest {
         List<Task> returnedFilteredList=(List<Task>)tasksOperations.incoming( new Date(2020, Calendar.MARCH, 11,12,0), new Date(2020,  Calendar.MARCH, 12,3,0));
 
         //assert
-        assertTrue(returnedFilteredList.size()==1);
+        assertEquals(1, returnedFilteredList.size());
     }
 
     //F02_TC06
@@ -124,7 +125,7 @@ class TasksOperationsTest {
 
 
         //assert
-        assertTrue(returnedFilteredList.size()==0);
+        assertEquals(0, returnedFilteredList.size());
     }
 
 
