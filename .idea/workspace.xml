@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="">
+    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="moved tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/ArrayTaskListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/test1/ArrayTaskListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/TasksOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/test2/TasksOperationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AI/AI/Lab4Cardio" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -140,7 +139,7 @@
       <workItem from="1586790791744" duration="6643000" />
       <workItem from="1586939599666" duration="2947000" />
       <workItem from="1588524743319" duration="4145000" />
-      <workItem from="1588534763907" duration="7221000" />
+      <workItem from="1588534763907" duration="11822000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored code/diagram + review report (./Docs/refactored)">
       <created>1584634873240</created>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588581975352</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="moved tests">
+      <created>1588583974379</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588583974379</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +267,8 @@
     <MESSAGE value="surefire version changing" />
     <MESSAGE value="changed folder for tests" />
     <MESSAGE value="changed pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed pom" />
+    <MESSAGE value="moved tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="271" y="0" key="#Tasks_[exec:java]" />
